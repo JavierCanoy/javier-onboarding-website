@@ -1,0 +1,8 @@
+[user]
+	name = javier
+	email = javiermabolotech.com
+	emai = javiermabolotech.com
+[color]
+	ui = true
+[core]
+	editor = emacs
