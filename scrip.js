@@ -116,9 +116,134 @@
 
 //coertion
 
-console.log("2" + 1);
-console.log("2" * 5);
+// console.log("2" + 1);
+// console.log("2" * 5);
 
-let num1 = "1" + 2;
-num1 = num1 - 1;
-console.log(num1);
+// let num1 = "1" + 2;
+// num1 = num1 - 1;
+// console.log(num1);
+
+//5 false value 0, "" , null ,NaN, undefined
+
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean("JAVIER"));
+// console.log(Boolean({}));
+
+//Equality operators == vs === and != vs !==
+// Rmder = always use strick ===equality to compare value
+
+// const age = 12;
+// const name = "20";
+// console.log(age === 12);
+// console.log(name == 20);
+
+// const favNumber = Number(prompt("enter your fav number  ? "));
+// console.log(favNumber);
+
+// if (favNumber === 2) {
+//   console.log("we are the same fav ! ");
+// } else {
+//   console.log("were not the same ! ");
+// }
+//----------
+//Basic Boolean Logic The and, or & not operators
+
+// const javierAge = 22;
+// const jonathanAge = 51;
+
+//some declaration
+//--------
+
+// const num1 = true;
+// const num2 = false;
+
+// //or
+// if (num1 || num2) {
+//   console.log("some of them ar correct ! ");
+// }
+// //and
+// if (num1 && num2) {
+//   console.log("some of them ar correct ! ");
+// } else {
+//   console.log("all of them are correct ! ");
+// }
+// // something new !
+
+// if (!num2) {
+//   console.log("this is false !");
+// }
+
+// //and ------
+// if (javierAge >= 22 && jonathanAge >= 22) {
+//   console.log("yes 2 are both true");
+// } else {
+//   console.log("some of them are wrong ! ");
+// }
+// // or ------
+// if (javierAge === 22 || jonathanAge > 100) {
+//   console.log("one of them are correct ! ");
+// } else {
+//   console.log("two of them are wrong ! ");
+// }
+
+// const minimum = 100;
+// const javierTeamTotalScore = 88 + 112 + 11;
+// const jonathanTeamTotalScore = 18 + 112 + 101;
+
+// const javierAverage = javierTeamTotalScore / 3;
+// const jonathanAverage = jonathanTeamTotalScore / 3;
+// // udemy declaration ! ----
+// //const javierteam = (2 + 12 + 21) / 3 ;
+// if (javierAverage >= minimum && javierAverage > jonathanAverage) {
+//   console.log(`javier team wins  , ${javierAverage}`);
+// } else if (jonathanAverage >= minimum && jonathanAverage > javierAverage) {
+//   console.log(`jonathan team wins ${jonathanAverage}`);
+// } else if (jonathanAverage === javierAverage) {
+//   console.log("we have a draw ! ");
+// } else {
+//   console.log("no team has pass the average ! ");
+// }
+
+//Swicth Statement !
+// const numbers = prompt("enter your numbre ");
+// switch (numbers) {
+//   case "2":
+//     console.log("you enter a number 2 ");
+//     break;
+//   case "1":
+//     console.log("you enter a number  1");
+//     break;
+//   default:
+//     console.log("you type is not a number ! ");
+// }
+
+//statement ang expressions
+
+//conditional (ternary) operator but if else if needed all the time samot nag dako nag code then daghan nag condition !
+
+// age = 21;
+
+// age >= 18
+//   ? console.log(" you can drink a beer ! ")
+//   : console.log("you cant ! drink a beer your to young ! ");
+
+// const drink = age >= 18 ? "beer ! " : "water ! ";
+// console.log(drink);
+
+// console.log(` i like to drink ! ${age >= 12 ? " beer ! " : "just water ! "} `);
+
+const bill = 300;
+const tip = 1;
+
+const value = bill + tip;
+
+console.log(value);
+// value <= 50 ? `${value % 15}` : `${value % 20}`;
+console.log(
+  value <= 50
+    ? `15 % of , ${value * 0.15}`
+    : value <= 300
+    ? ` 15% 0f, ${value * 0.15}`
+    : `20%  of , ${value * 0.2}`
+);
