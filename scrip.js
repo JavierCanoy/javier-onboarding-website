@@ -233,17 +233,21 @@
 
 // console.log(` i like to drink ! ${age >= 12 ? " beer ! " : "just water ! "} `);
 
-const bill = 300;
-const tip = 1;
+// const bill = 300;
+// const tip = 1;
 
-const value = bill + tip;
+// const value = bill + tip;
 
-console.log(value);
-// value <= 50 ? `${value % 15}` : `${value % 20}`;
-console.log(
-  value <= 50
-    ? `15 % of , ${value * 0.15}`
-    : value <= 300
-    ? ` 15% 0f, ${value * 0.15}`
-    : `20%  of , ${value * 0.2}`
-);
+// console.log(value);
+// // value <= 50 ? `${value % 15}` : `${value % 20}`;
+// console.log(
+//   value <= 50
+//     ? `15 % of , ${value * 0.15}`
+//     : value <= 300
+//     ? ` 15% 0f, ${value * 0.15}`
+//     : `20%  of , ${value * 0.2}`
+// );
+// 'use strict'; to make a visible error !
+
+// `use strict`;
+// const private = 123;
