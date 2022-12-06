@@ -233,21 +233,75 @@
 
 // console.log(` i like to drink ! ${age >= 12 ? " beer ! " : "just water ! "} `);
 
-// const bill = 300;
-// const tip = 1;
+// const bill = 301;
 
-// const value = bill + tip;
+// let tip;
 
-// console.log(value);
+// console.log(bill);
 // // value <= 50 ? `${value % 15}` : `${value % 20}`;
 // console.log(
-//   value <= 50
-//     ? `15 % of , ${value * 0.15}`
-//     : value <= 300
-//     ? ` 15% 0f, ${value * 0.15}`
-//     : `20%  of , ${value * 0.2}`
+//   bill <= 50
+//     ? `15 % of , ${(tip = bill * 0.15)} , ${tip + bill}`
+//     : bill <= 300
+//     ? ` 15% 0f, ${(tip = bill * 0.15)} , ${tip + bill}`
+//     : `20%  of ,  ${(tip = bill * 0.2)} ,${tip + bill}  `
 // );
-// 'use strict'; to make a visible error !
 
-// `use strict`;
-// const private = 123;
+// use strict
+
+// "use strict";
+// const interface = `Audio`;
+//defrnt developer dprd deprnt format !
+//function ! kung value pwdy na gunitan sa variables !
+// function studentData(firstName, age, schoolname) {
+//   console.log(firstName, age, schoolname);
+// }
+
+// studentData("javierbernadascanoy ! ", 12, "tagum national trade school");
+// studentData("jonathan bernadas canoy ! ! ", 51, "tagum national trade school");
+
+// // 1.function declaration  vs 2.expression !
+// //1fucntiondec
+// function age1(birthday) {
+//   return 2022 - birthday;
+// }
+
+// console.log(`${age1(1982)}`);
+
+// //2expression
+// const age2 = function (birthday) {
+//   return 2022 - birthday;
+// };
+
+// console.log(`${age2(1982)}`);
+//arrow function ! pfrd for one liner !
+
+// const age3 = (birthday) => 2022 - birthday;
+// console.log(`${age3(1982)}`);
+
+//arrow function but have more than a one blocks of code !
+
+// const retire = (birthyear, firstName) => {
+//   const age = 2022 - birthyear;
+//   const retirement = 60 - age;
+
+//   return ` ${firstName} retire in ${retirement} ,years more ! `;
+// };
+
+// console.log(`${retire(1982, "javier ")}`);
+// console.log(`${retire(1978, "jonathan !  ")}`);
+
+//function calling function !
+
+// function cutfrt(frts) {
+//   return frts * 3;
+// }
+
+// function kindoffrst(manggo, apple) {
+//   const manggocut = cutfrt(manggo);
+//   const applecut = cutfrt(apple);
+
+//   return `manggo cut  ! ${manggocut} and apple cut ${applecut}`;
+// }
+
+// console.log(kindoffrst(5, 2));
