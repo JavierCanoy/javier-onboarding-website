@@ -232,11 +232,8 @@
 // console.log(drink);
 
 // console.log(` i like to drink ! ${age >= 12 ? " beer ! " : "just water ! "} `);
-
-// const bill = 301;
-
+// const bill = 400;
 // let tip;
-
 // console.log(bill);
 // // value <= 50 ? `${value % 15}` : `${value % 20}`;
 // console.log(
@@ -248,7 +245,6 @@
 // );
 
 // use strict
-
 // "use strict";
 // const interface = `Audio`;
 //defrnt developer dprd deprnt format !
@@ -305,3 +301,167 @@
 // }
 
 // console.log(kindoffrst(5, 2));
+
+//arrow function calculate 3 score
+//first is 3 value added then total is divided by 3
+// this arrow fucntion is too long !
+// const calculateAve = (score1, score2, score3) => {
+//   const totalAverage = (score1 + score2 + score3) / 3;
+//   return totalAverage;
+// };
+
+// //arraw fucntion short
+// // const calculate = (score1 , score2 , score3) => (score1 + score2 + score3) / 3;
+
+// //2nd is call the arrow funcktion and put 3 score of a person to calculate average
+
+// const javiercore = calculateAve(512, 50, 5);
+// const jonathanscore = calculateAve(102, 10, 10);
+
+// //3rd create function and put the data of a person to check who is the winner !
+// function checkWinner(javier, jonathanscore) {
+//   if (javier >= 2 * jonathanscore) {
+//     const winner = `javier win (${javier} vs ${jonathanscore})`;
+//     return winner;
+//   } else if (javier <= 2 * jonathanscore) {
+//     const winner = `jonathan win (${jonathanscore} vs ${javier})`;
+//     return winner;
+//   } else {
+//     const draw = `jonathan and javier is Draw ! `;
+//     return draw;
+//   }
+// }
+
+// const winner = checkWinner(javiercore, jonathanscore);
+// console.log(`${winner}`);
+
+//introduction of arrrays !
+
+// const f1 = "javier";
+// const f2 = "javier2";
+// const f3 = "javier3";
+//insted of using this we go for array to make it simple
+// arrays is a primetive value can change it(const)
+//can hold any value
+
+// const friends = ["javier", "dung", "james "];
+// console.log(friends);
+
+// const year = new Array(12, 23, 4, 123);
+// // console.log(`${year}`);
+// // console.log(year);
+
+// // for (let i = 0; i < friends.length; i++) {
+// //   console.log(`${friends[i]}`);
+// // }
+// const javier = [friends, "akoa ng mga prend ! ", 4, " sila "];
+
+// console.log(javier);
+
+//basicarray operation
+
+// const friends = ["javier", "dung", "james "];
+// const newL = friends.push`canoy`; //push adding a new value on arrays at the end
+// console.log(friends);
+// console.log(newL);
+
+// friends.unshift(`jonallyn`); ///unshift adding at the begining
+// console.log(friends);
+
+// friends.pop(); // removing the last value of the arrays
+// console.log(friends);
+// friends.pop();
+// console.log(friends);
+
+// const popped = friends.pop();
+// console.log(popped);
+// console.log(friends);
+
+// friends.shift(); // remove first at the arrays but no arguments
+// console.log(friends);
+// friends.unshift("arlyn");
+// console.log(friends);
+
+// console.log(friends.indexOf("arlyn"));
+// console.log(friends.indexOf("jun")); // -1 if the value not in the arrays list !
+
+// //check if the value is in the arrays list (true or false ! ) it return a boolean
+// console.log(friends.includes("arlyn"));
+// console.log(friends.includes("jun"));
+
+//Code Challenge //dugay nahuman pero goods !
+
+// function calTip(bill) {
+//   if (bill >= 50 && bill <= 300) {
+//     const totaltip = bill * 0.15; //tip
+//     // return console.log(`total tip ${totaltip}`);
+//     return totaltip;
+//   } else {
+//     const totaltip = bill * 0.2; //tip
+
+//     // return console.log(`total tip ${totaltip}`);
+//     return totaltip;
+//   }
+// }
+// const bills = [125, 555, 44];
+// // for (let i = 0; i < bills.length; i++) {
+// //   console.log(calTip(bills[i]));
+// // }
+
+// // const tip = new Array(bills);
+// // for (let i = 0; i < tip.length; i++) {
+// //   console.log(calTip[i]);
+// // }
+// const tip = [calTip(bills[0]), calTip(bills[1]), calTip(bills[2])];
+// console.log(bills, tip);
+
+// const total = [tip[0] + bills[0], tip[1] + bills[1], tip[2] + bills[2]];
+// console.log(total);
+
+//--------------
+//introduction to objects
+// const studentData = {
+//   // studentdata is ocject
+//   //firstname: "javier" // firstname  is a property
+//   // inside is property !
+// };
+
+// const studentData = {
+//   name1: `javier`,
+//   age: `22`,
+//   year: "4rth",
+// };
+//console.log(studentData);
+
+//-----Dot vs Bracket notation
+// const studentData = {
+//   name1: `javier`,
+//   age: `22`,
+//   year: "4rth",
+//   father: "jonathan",
+//   mother: "arlyn",
+//   friend: [`jun `, "dung ", " ding"],
+// };
+
+// // const wanToKnow = prompt(
+// //   ` what do you want to know me !  ?  pick betwen name1 , age , year , father , and mothers name  :`
+// // );
+
+// // function toKnow(wanToKnow) {
+// //   if (wanToKnow === "name1") {
+// //     console.log(studentData.name1);
+// //   } else if (wanToKnow === "name1") {
+// //   } else if ("age") {
+// //     console.log(studentData.age);
+// //   } else {
+// //     console.log("you enter a invalid keywords ! ");
+// //   }
+// // }
+// // toKnow(wanToKnow);
+// // console.log(studentData[wanToKnow]);
+// studentData.sister = "jonalyn"; // adding directly to the object
+// console.log(studentData.sister);
+// console.log(
+//   ` ${studentData.name1} , ${studentData.friend.length} , ${studentData.friend[0]}`
+// );
+//----- object method !
