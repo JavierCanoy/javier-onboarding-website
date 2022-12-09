@@ -465,3 +465,187 @@
 //   ` ${studentData.name1} , ${studentData.friend.length} , ${studentData.friend[0]}`
 // );
 //----- object method !
+
+// const studentData = {
+//   name: "javier",
+//   lastname: "canoy",
+//   birthyear: 2000,
+
+//   // calAge: function (
+//   //   birthyear // kung ang function naa sulod sa object tawag ana method
+//   // ) {
+//   //   return 2022 - birthyear;
+//   // },
+
+//   calAge: function () {
+//     // console.log(this);
+
+//     return 2022 - this.birthyear;
+//     //return 2022 - studentData.birthyear; ---- the same as the top declaration return
+//   },
+// };
+
+// // console.log(studentData.calAge(2000)); //dot
+// // console.log(studentData["calAge"](2000)); //bracket notation
+// // console.log(`javier age : ${studentData.calAge()}`);
+
+// for (let i = 0; i < 5; i++) {
+//   console.log(`javier age : ${studentData.calAge()}`);
+// }
+
+//challenge
+
+// const studentData = {
+//   //object
+//   name: "javier",
+//   last: "bernadas",
+//   age: 2022,
+//   dL: true,
+
+//   calculate: function () {
+//     return this.age - 2000; //property
+//   },
+
+//   check: function () {
+//     //method
+//     let checking = "";
+//     if (this.dL) {
+//       checking = `${
+//         this.name
+//       } , ${this.calculate()} , and has a driver license`;
+//       // this.calculate ? 'a' : 'no ' ;
+//       return checking;
+//     } else {
+//       checking = `${this.name} , ${this.calculate(
+//         this.year
+//       )} , and has  no  driver license !`;
+//       return checking;
+//     }
+//   },
+// };
+// console.log(studentData.check());
+
+//code challenge
+
+// const javierData = {
+//   fullname: "javiercanoy",
+//   mass: 782,
+//   h: 1.629,
+
+//   calBmi: function () {
+//     const bmi = this.mass / this.h ** this.mass;
+//     return bmi;
+//   },
+// };
+
+// const jonathanData = {
+//   fullname: "jonathanencabo",
+//   mass: 92,
+//   h: 1.95,
+
+//   calBmi: function () {
+//     const bmi = this.mass / this.h ** this.mass;
+//     return bmi;
+//   },
+// };
+
+// if (jonathanData.calBmi() > javierData.calBmi()) {
+//   console.log(
+//     `${
+//       jonathanData.fullname
+//     } BMI is dakopa (${jonathanData.calBmi()}) than javier (${javierData.calBmi()})`
+//   );
+// } else {
+//   console.log(
+//     `${
+//       javierData.fullname
+//     } BMI is dakopa (${javierData.calBmi()}) than javier (${jonathanData.calBmi()})`
+//   );
+// }
+//loop
+
+// for (let i = 0; i < 5; i++) {
+//   console.log(`javier`);
+// }
+//looping arrray , breaking and continue
+
+// const javier = [1, 2, 3, 123, 1223, 34, "javier", "jonthan", " dung "];
+
+// for (let i = 0; i < javier.length; i++) {
+//
+//   console.log(`${javier[i]}`);
+// }
+//-----------------continue and breaks
+
+//continue = The continue statement terminates execution of the statements in the current iteration of the current or labeled loop, and continues execution of the loop with the next iteration.
+// for (let i = 0; i < javier.length; i++) {
+//   if (typeof javier[i] === "number") continue; // kung dipa equal padayun pa hantud kung ma equal print na
+//   // kung di pa equal sa string contnue pa if ma equal na eh print na niya sa console ang equal
+//   // last hint ! = kung ma kita na niya iyang ge condition labyan niya then padayun !
+//   console.log(javier[i], typeof javier[i]);
+// }
+
+//break -The break statement terminates the current loop, switch, or label statement and transfers program control to the statement following the terminated statement.
+// const javier1 = [2, 3, "j", 5, " jonalyn"];
+// let i;
+// 0;
+// for (i = 0; i < javier1.length; i++) {
+//   if (typeof javier1[i] === "string") break; // if ma equal na sa iyaha break na kung makita iyang need
+// }
+// console.log(javier1[i], typeof javier1[i]);
+
+//---------------looping backwards and loops in loop
+// const javier = [1, 2, 3, 123, 1223, 34, "javier", "jonthan", " dung "];
+
+// for (let i = javier.length - 1; i >= 0; i--) {
+//   console.log(javier[i]);
+// }
+
+// for (let i = 1; i <= 5; i++) {
+//   console.log(`star this ${i}`);
+//   for (let t = 1; t <= 5; t++) {
+//     console.log(`in loop ${t}`);
+//   }
+// }
+//-------while loop
+
+// let i = 0;
+// while (i < 6) {
+//   console.log(`javier ${i}`);
+//   i++;
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+
+// while (dice !== 5) {
+//   console.log(`you rolled number : ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+
+//   if (dice == 5) {
+//     console.log("loop is entering to the exit ! ");
+//   }
+// }
+// console.log(`${dice} `);
+
+//----------coding challenge
+
+//array contain 10 value
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+// // const drink = age >= 18 ? "beer ! " : "water ! ";
+
+// const calTip = function (bill) {
+//   const tip = bill <= 50 && bill > -300 ? bill * 0.15 : bill * 0.2;
+//   const total = tip + bill;
+//   console.log(` value of fill and tip : bill ${bill} and tip ${tip}`);
+//   // return console.log(`${tip} + ${bill} = ${total}`);
+//   return total;
+// };
+// // const newL = friends.push`canoy`; //push adding a new value on arrays at the end
+// const emty = [];
+// for (let i = 0; i < bills.length; i++) {
+//   const tip = calTip(bills[i]);
+//   console.log(`  tip + bill : ${tip}`);
+//   emty.push(`${tip} , ${bills[i]}`);
+//   console.log(`2 ${emty}`);
+// }
