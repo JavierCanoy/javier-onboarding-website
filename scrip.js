@@ -649,3 +649,227 @@
 //   emty.push(`${tip} , ${bills[i]}`);
 //   console.log(`2 ${emty}`);
 // }
+
+//Async
+//forEach
+
+// console.log(`-------forEach--------`);
+// const arr = [2, 22, 43, 234, 2, 3, 4, -5, 123, 232];
+// // arr.forEach(function (currentElement, index, intearArray)
+// arr.forEach(function (arrays, i) {
+//   if (arrays > 0) {
+//     i += 1;
+//     console.log(`you deposite! ${i}  ${arrays}`);
+//   } else {
+//     i += 1;
+//     console.log(`you did not deposite! ${i}. ${arrays}`);
+//   }
+// });
+
+//forEach map and set !
+//map
+// const names = new Map([
+//   [`JB`, `JAVIERBERNADAS`],
+//   [`JC`, `JONATHANCANOY`],
+//   [`AC`, `ARLYNCANOY`],
+// ]);
+
+// names.forEach(function (value, key, map) {
+//   console.log(`${key} : ${value} `);
+// });
+// //sets
+
+// const names1 = new Set([
+//   [`JB`, `JAVIERBERNADAS`],
+//   [`JC`, `JONATHANCANOY`],
+//   [`AC`, `ARLYNCANOY`],
+// ]);
+// names1.forEach(function (value, _, map) {
+//   console.log(`${_} : ${value} `);
+// });
+
+//DOM document object model
+//api application porgraming interface
+
+//asynchronouse is noon-blocking
+// const p = document.querySelector(`.p`);
+// setTimeout(function () {
+//   p.textContent = "javier";
+// }, 5000);
+// p.style.color = `red`;
+
+// Asynchronous Jacascrip And Xml communicate remote webs server in a asynchronousway
+//with AJAX CALLS WE CAN REQUEST DATAFRIN THE WEB
+//JASON IS A BIG STRING OF TEXT AND DATA
+
+// const request = new XMLHttpRequest();
+
+// request.open(`GET`, `https://restcountries.com/v3.1/name/portugal`);
+// request.send();
+// request.addEventListener(`load`, function () {
+//   const data = JSON.parse(this.responseText);
+//   console.log(data);
+// });
+
+// const lotpromise = new Promise(function (resolve, reject) {
+//   console.log("lottery happening ! ");
+//   setTimeout(function () {
+//     if (Math.random() >= 0.5) {
+//       resolve("you win ! ");
+//     } else {
+//       reject(new Error(" you lose ! "));
+//     }
+//   }, 2000);
+// });
+
+// lotpromise
+//   .then((resolve) => console.log(resolve))
+//   .catch((err) => console.error(err));
+
+// const wait = function (seconds) {
+//   return new Promise(function (resolve) {
+//     setTimeout(resolve, seconds * 1000);
+//   });
+// };
+
+// wait(2)
+//   .then(() => {
+//     console.log("i waited in 2 seconds ! ");
+//     return wait(1);
+//   })
+//   .then(() => console.log(" i waited in 1 seconds ! "));
+
+//callback
+
+// let javier = function (lastname) {
+//   setTimeout(function () {
+//     console.log("javier" + ` ${lastname}`);
+//   }, 2000);
+// };
+
+// javier("javierbdudung");
+
+//promise naa puy promise nga sulod sa function !
+
+// let p = new Promise((resolve, rejected) => {
+//   let a = 1 + 11;
+//   if (a == 2) {
+//     resolve("RESOLVE ! ");
+//   } else {
+//     rejected("REJECTED");
+//   }
+// });
+
+// p.then((message) => {
+//   console.log(Response + message);
+// }).catch((message) => {
+//   console.log("ERROR " + message + Response);
+// });
+
+// const age21 = 11;
+// function javier() {
+//   return new Promise((resolve, reject) => {
+//     if (age21 === 1) {
+//       resolve("javier is good ! ");
+//     } else {
+//       reject("javier is not Good ! ");
+//     }
+//   });
+// }
+
+// javier()
+//   .then((message) => {
+//     console.log("canoy : " + message);
+//   })
+//   .catch((message) => {
+//     console.log(" bernadas Error : " + message);
+
+//     console.error("javier ! error ! ");
+//   });
+
+// const request = new XMLHttpRequest();
+// request.open("GET", " https://jsonplaceholder.typicode.com/users");
+// request.send();
+// request.onload = () => {
+//   if (request.status === 200) {
+//     console.log(JSON.parse(request.response));
+//   } else {
+//     console.log(request.response);
+//     console.log(` error  ka ! ` + request.response);
+//   }
+// };
+// async function getuser() {
+//   let response = await fetch(`https://jsonplaceholder.typicode.com/users`);
+//   let data = await response.json();
+//   return data;
+// }
+// getuser().then((response) => {
+//   console.log(response);
+// });
+
+//callback!
+// setTimeout(() => {
+//   console.log("wait 1 sec ! ");
+// }, 1000);
+
+//nameList data  and stree !
+// const load = async function () {
+//   const ol = document.querySelector("ol");
+
+//   let resp = await fetch(`https://jsonplaceholder.typicode.com/users`);
+//   const data = await resp.json();
+
+//   for (let i = 0; i <= data.length - 1; i++) {
+//     generateListName(
+//       `Name :${data[i].name} `,
+//       i,
+//       `Street : ${data[i].address.street}`
+//     );
+//   }
+//   function generateListName(namedata, indexNumer, addressdata) {
+//     const h3 = document.createElement("h3");
+//     const li = document.createElement("li");
+//     const h4 = document.createElement("h4");
+
+//     li.innerHTML = indexNumer;
+//     h3.innerHTML = namedata;
+//     h4.innerHTML = addressdata;
+
+//     li.appendChild(h3);
+//     li.appendChild(h4);
+
+//     ol.appendChild(li);
+//   }
+
+//   //search
+//   const search = document.querySelector(".search");
+//   search.addEventListener("click", function () {
+//     let index = prompt("Pick 0 to 9 ! if you want more Details : ");
+//     if (index >= data.length) {
+//       window.alert(" invalid input ! ");
+//     } else if (index < data.length) {
+//       indexPicker(index);
+//     } else if (index != Number) {
+//       window.alert(" invalid input ! ");
+//     }
+//   });
+// };
+
+// // indexPicker for more dtls1
+// const indexPicker = async function (indexNumer) {
+//   let resp = await fetch(
+//     `https://jsonplaceholder.typicode.com/users/${indexNumer}`
+//   );
+//   const data = await resp.json();
+
+//   generateListItem(data.name, data.username, data.email, data.id);
+
+//   function generateListItem(namedata, usernamedata, emaildata, iddata) {
+//     const search = (document.querySelector(
+//       ".info"
+//     ).textContent = ` Name: ${namedata}  Username :${usernamedata} Email :${emaildata} Id :${iddata} `);
+//   }
+// };
+
+// //call
+// load();
