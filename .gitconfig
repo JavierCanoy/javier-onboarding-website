@@ -1,8 +1,13 @@
 [user]
-	name = javier
-	email = javiermabolotech.com
+	name = JavierCanoy
+	email = javier@mabolotech.com
 	emai = javiermabolotech.com
 [color]
 	ui = true
 [core]
 	editor = emacs
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
