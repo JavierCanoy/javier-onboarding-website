@@ -36,7 +36,7 @@ export default function Login() {
   return (
     <>
       <div className="main-wrapper bg-colorThem-100  ">
-        <div> javier bernadas canoy ~  </div>
+        <div className=" text-red-700 "> javier bernadas canoy  pull req !   </div>
         <div> try to oush from create new brach !  ~  </div>
         <div> 2nd try !  try to oush from create new brach ! 123123131  ~  </div>
           <div className="image-logo mt-6">
