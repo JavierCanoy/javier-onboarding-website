@@ -37,6 +37,10 @@ export default function Login() {
     <>
       <div className="main-wrapper bg-colorThem-100  ">
         <div> javier bernadas canoy ~  </div>
+        <div> try to oush from create new brach !  ~  </div>
+        <div> 2nd try ! git try to oush from create new brach !  ~  </div>
+
+        
         <div className="  grid  justify-items-center">
           <div className="image-logo mt-6">
             <Image
