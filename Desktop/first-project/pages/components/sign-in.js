@@ -38,7 +38,9 @@ export default function Login() {
       <div className="main-wrapper bg-colorThem-100  ">
         <div> javier bernadas canoy ~  </div>
         <div> try to oush from create new brach !  ~  </div>
-        <div> 2nd try ! git try to oush from create new brach !  ~  </div>
+        <div> 2nd try !  try to oush from create new brach !  ~  </div>
+        <div> 3nd try ! from main ! psuh   try to oush from create new brach !  ~  </div>
+
 
         
         <div className="  grid  justify-items-center">
