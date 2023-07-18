@@ -39,10 +39,6 @@ export default function Login() {
         <div> javier bernadas canoy ~  </div>
         <div> try to oush from create new brach !  ~  </div>
         <div> 2nd try !  try to oush from create new brach ! 123123131  ~  </div>
-
-
-        
-        <div className="  grid  justify-items-center">
           <div className="image-logo mt-6">
             <Image
               src="/images/logo.svg"
