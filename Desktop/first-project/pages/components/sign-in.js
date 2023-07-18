@@ -36,6 +36,7 @@ export default function Login() {
   return (
     <>
       <div className="main-wrapper bg-colorThem-100  ">
+        <div> javier bernadas canoy ~  </div>
         <div className="  grid  justify-items-center">
           <div className="image-logo mt-6">
             <Image
